@@ -1,10 +1,10 @@
 var admin = require("firebase-admin");
 // 輸入自己的金鑰
-var serviceAccount = require("../fleet-impact-361308-firebase-adminsdk-mygg8-6d7c584b5a.json");
+var serviceAccount = require("../stron-0913-firebase-adminsdk-zr104-f684483638.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://fleet-impact-361308-default-rtdb.asia-southeast1.firebasedatabase.app"
+  databaseURL: "https://stron-0913-default-rtdb.firebaseio.com"
 });
 
 var db = admin.database();
